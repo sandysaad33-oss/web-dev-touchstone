@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery - Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>North Star Bakery</h1>
+    <p>Handmade breads and pastries baked fresh every morning.</p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Pre-Orders and Questions</h2>
+      <p>Fill out the form below to place a pre-order or ask us a question. Please submit pre-orders at least 2 days before your pickup date.</p>
+      <p id="storage-note" class="info-note"></p>
+
+      <form id="bakery-form" action="/submit-request" method="post" novalidate>
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="customerName">Full Name:</label><br>
+          <input type="text" id="customerName" name="customerName" minlength="2" required>
+          <span class="error-message" id="customerName-error"></span><br><br>
+
+          <label for="customerEmail">Email Address:</label><br>
+          <input type="email" id="customerEmail" name="customerEmail" required>
+          <span class="error-message" id="customerEmail-error"></span><br><br>
+
+          <label for="pickupDate">Pickup Date:</label><br>
+          <input type="date" id="pickupDate" name="pickupDate" required>
+          <span class="error-message" id="pickupDate-error"></span>
+        </fieldset>
+
+        <fieldset>
+          <legend>Request Type</legend>
+          <input type="radio" id="preOrder" name="requestType" value="pre-order" required>
+          <label for="preOrder">Pre-Order Request</label><br>
+
+          <input type="radio" id="generalQuestion" name="requestType" value="question">
+          <label for="generalQuestion">General Question</label><br>
+          <span class="error-message" id="requestType-error"></span>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order or Message Details</legend>
+          <label for="itemDetails">Item Details or Question:</label><br>
+          <textarea id="itemDetails" name="itemDetails" rows="4" cols="40" minlength="5" required></textarea>
+          <span class="error-message" id="itemDetails-error"></span><br><br>
+
+          <label for="allergyNotes">Allergy Notes (if applicable):</label><br>
+          <textarea id="allergyNotes" name="allergyNotes" rows="3" cols="40"></textarea>
+        </fieldset>
+
+        <button type="submit">Send Request</button>
+        <p id="form-status" class="success-message"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Location and Hours</h2>
+      <p>
+        <strong>Address:</strong><br>
+        412 Main Street<br>
+        North Star District
+      </p>
+      <p>
+        <strong>Hours of Operation:</strong><br>
+        Tuesday – Sunday: 7:00 AM to 4:00 PM<br>
+        Monday: Closed
+      </p>
+      <p>
+        <strong>Phone:</strong> <a href="tel:+15552345678">(555) 234-5678</a><br>
+        <strong>Email:</strong> <a href="mailto:orders@northstarbakery.com">orders@northstarbakery.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery - Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>North Star Bakery</h1>
+    <p>Handmade breads and pastries baked fresh every morning.</p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section>
+      <h2>Our Baked Goods</h2>
+      <p>Everything is baked fresh daily. Click "Add to Pre-Order List" on any item below to save it for your order.</p>
+      <figure>
+        <img src="bakery-signature-loaf_c.png" alt="Round crusty sourdough loaf dusted with flour on a wooden board" width="500" height="350">
+        <figcaption>Our Signature Loaf: Country Sourdough baked with a crisp crust and soft center ($8 - $10).</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Breads</h2>
+      <p>Made with simple ingredients and baked each morning. Price range: $6 – $11 per loaf.</p>
+      <img src="bakery-bread_c.png" alt="Assorted fresh loaves of artisan bread lined up on a bakery shelf" width="500" height="350">
+      <ul class="menu-list">
+        <li>
+          <strong>Country Sourdough:</strong> Classic crusty loaf with a mild tangy flavor ($9.00)
+          <button type="button" class="add-item-btn" data-item="sourdough">Add to Pre-Order List</button>
+        </li>
+        <li>
+          <strong>Honey Wheat Loaf:</strong> Soft sandwich bread sweetened with local honey ($8.00)
+          <button type="button" class="add-item-btn" data-item="wheat">Add to Pre-Order List</button>
+        </li>
+        <li>
+          <strong>Rosemary Olive Oil Focaccia:</strong> Thick flatbread topped with sea salt and fresh herbs ($8.00)
+          <button type="button" class="add-item-btn" data-item="focaccia">Add to Pre-Order List</button>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pastries</h2>
+      <p>Flaky, buttery treats perfect for breakfast or an afternoon coffee. Price range: $3 – $6 each.</p>
+      <ul class="menu-list">
+        <li>
+          <strong>Butter Croissant:</strong> Classic layered pastry baked until golden brown ($4.00)
+          <button type="button" class="add-item-btn" data-item="croissant">Add to Pre-Order List</button>
+        </li>
+        <li>
+          <strong>Cinnamon Morning Bun:</strong> Rolled with brown sugar, cinnamon, and vanilla glaze ($4.50)
+          <button type="button" class="add-item-btn" data-item="bun">Add to Pre-Order List</button>
+        </li>
+        <li>
+          <strong>Blueberry Muffin:</strong> Soft muffin filled with fresh berries and a crumbly sugar top ($3.75)
+          <button type="button" class="add-item-btn" data-item="muffin">Add to Pre-Order List</button>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cakes</h2>
+      <p>Available by the slice in-store or as whole custom cakes for birthdays and events. Price range: $5 – $65.</p>
+      <ul>
+        <li><strong>Vanilla Bean Layer Cake:</strong> Three layers of sponge cake with vanilla buttercream ($5.50 slice / $45 - $65 whole)</li>
+        <li><strong>Chocolate Fudge Cake:</strong> Rich dark chocolate cake with smooth chocolate frosting ($6 slice / $50 - $65 whole)</li>
+        <li><strong>Lemon Berry Loaf Cake:</strong> Bright lemon cake topped with sweet glaze ($5 slice / $28 whole)</li>
+      </ul>
+      <p><a href="contact.html">Request a custom cake or bakery pre-order</a></p>
+    </section>
+
+    <section>
+      <h2>Your Saved Pre-Order List</h2>
+      <p id="preorder-status">Your pre-order list is empty.</p>
+      <ul id="preorder-list"></ul>
+      <button type="button" id="clear-list-btn">Clear List</button>
+      <p><a href="contact.html">Go to Contact page to submit your pre-order</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
